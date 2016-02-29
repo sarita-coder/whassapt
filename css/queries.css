@@ -1,0 +1,24 @@
+.container {
+    padding:0px;
+}
+
+@media screen and (max-width:760px) {
+    aside.w-contacts {
+        display: none;
+    }
+    article {
+        width: 100%;
+        padding:0px;
+        position:relative;
+        top: -20px;
+     
+    }
+}
+
+@media(min-width:1300px) {
+    .container {
+        width: 85%;
+        padding:0px;
+    }
+}
+
