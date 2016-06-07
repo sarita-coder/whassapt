@@ -255,7 +255,21 @@ article{
 .amarillo{
 	color: #e2c072;
 }
-
+.time-i{
+	font-size: 9px;
+}
+.contact:hover{
+	background: #d9dbd6;
+}
+#chat-status{
+	font-size: 11px;
+}
+.none{
+	display: none;
+}
+.visible{
+	display: flex!important;
+}
 
 
 
