@@ -7,30 +7,86 @@
 2 info using npm@2.14.20
 3 info using node@v4.4.0
 4 verbose install initial load of C:\Users\SARITA\Desktop\whassapt\package.json
-5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token 'd' at 4:3
-5 verbose stack 	"dependencies":{
-5 verbose stack 	 ^
-5 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
-5 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
-5 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
-5 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-6 verbose cwd C:\Users\SARITA\Desktop\whassapt
-7 error Windows_NT 6.3.9600
-8 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "socket.oi"
-9 error node v4.4.0
-10 error npm  v2.14.20
-11 error file C:\Users\SARITA\Desktop\whassapt\package.json
-12 error code EJSONPARSE
-13 error Failed to parse json
-13 error Unexpected token 'd' at 4:3
-13 error 	"dependencies":{
-13 error 	 ^
-14 error File: C:\Users\SARITA\Desktop\whassapt\package.json
-15 error Failed to parse package.json data.
-15 error package.json must be actual JSON, not just JavaScript.
-15 error
-15 error This is not a bug in npm.
-15 error Tell the package author to fix their package.json file. JSON.parse
-16 verbose exit [ 1, true ]
+5 warn package.json Parametros-en-las-url-nodejs@0.0.1 No description
+6 warn package.json Parametros-en-las-url-nodejs@0.0.1 No repository field.
+7 warn package.json Parametros-en-las-url-nodejs@0.0.1 No README data
+8 warn package.json Parametros-en-las-url-nodejs@0.0.1 No license field.
+9 verbose readDependencies loading dependencies from C:\Users\SARITA\Desktop\whassapt\package.json
+10 silly cache add args [ 'socket.oi', null ]
+11 verbose cache add spec socket.oi
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'socket.oi',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'socket.oi',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: 'latest',
+12 silly cache add   type: 'tag' }
+13 silly addNamed socket.oi@latest
+14 verbose addNamed "latest" is being treated as a dist-tag for socket.oi
+15 info addNameTag [ 'socket.oi', 'latest' ]
+16 silly mapToRegistry name socket.oi
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/socket.oi
+20 verbose addNameTag registry:https://registry.npmjs.org/socket.oi not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/socket.oi
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 14:14:16
+24 verbose request id 1fabff873ba62a3f
+25 http request GET https://registry.npmjs.org/socket.oi
+26 http 404 https://registry.npmjs.org/socket.oi
+27 verbose headers { 'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '2',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Wed, 08 Jun 2016 19:14:18 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-jfk1036-JFK',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1465413258.729836,VS0,VE21',
+27 verbose headers   vary: 'Accept-Encoding' }
+28 silly get cb [ 404,
+28 silly get   { 'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=0',
+28 silly get     'content-length': '2',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Wed, 08 Jun 2016 19:14:18 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-jfk1036-JFK',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1465413258.729836,VS0,VE21',
+28 silly get     vary: 'Accept-Encoding' } ]
+29 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
+29 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+29 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+29 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+29 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+29 verbose stack     at emitTwo (events.js:87:13)
+29 verbose stack     at Request.emit (events.js:172:7)
+29 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+29 verbose stack     at emitOne (events.js:82:20)
+29 verbose stack     at Request.emit (events.js:169:7)
+29 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+30 verbose statusCode 404
+31 verbose pkgid socket.oi
+32 verbose cwd C:\Users\SARITA\Desktop\whassapt
+33 error Windows_NT 6.3.9600
+34 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "socket.oi"
+35 error node v4.4.0
+36 error npm  v2.14.20
+37 error code E404
+38 error 404 Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
+38 error 404
+38 error 404 'socket.oi' is not in the npm registry.
+38 error 404 You should bug the author to publish it (or use the name yourself!)
+38 error 404 It was specified as a dependency of 'Parametros-en-las-url-nodejs'
+38 error 404
+38 error 404 Note that you can also install from a
+38 error 404 tarball, folder, http url, or git url.
+39 verbose exit [ 1, true ]

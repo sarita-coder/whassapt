@@ -12,7 +12,7 @@ io.sockets.on("connection", arranque);
 function arranque (socket) {
   socket.on("datos_cliente",regresar_datos);
 }
-function regrear_datos (data) {
+function regresar_datos (data) {
   io.sockets.emit("datos_servicor",data);  
 }
 

@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -454,15 +454,15 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
   <script>
-      var webSocket = io.connect("http://127.0.0.1:3000"); // Inicializamos socketIO en el cliente
-      $('#escribe').keyup(function inicio () {
+      var webSocket = io.connect("http://127.0.0.1:3000"); 
+      // Inicializamos socketIO en el cliente
+      $('#escribe').keyup(function inicio (evt) {
         if (evt.keyCode === 13) {
           enviar_datos();
           webSocket.on("datos_servidor",recibir_datos);
         }
       });
-      function enviar_datos (e) {
-         e.preventDefault();
+      function enviar_datos () {
          var dato=$("#escribe").val();
          webSocket.emit("datos_cliente",dato);
       }
