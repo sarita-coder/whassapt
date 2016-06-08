@@ -18,7 +18,7 @@ var io   = require('socket.io')(http);
  *  siempre lo direccionaremos al html del sistema de chat.
  */
 app.get('*', function(req, res) {
-  res.sendFile( __dirname + '/chat.html');
+  res.sendFile( __dirname + 'index.html');
 });
 
 
