@@ -11,82 +11,83 @@
 6 warn package.json Parametros-en-las-url-nodejs@0.0.1 No repository field.
 7 warn package.json Parametros-en-las-url-nodejs@0.0.1 No README data
 8 warn package.json Parametros-en-las-url-nodejs@0.0.1 No license field.
-9 verbose readDependencies loading dependencies from C:\Users\SARITA\Desktop\whassapt\package.json
-10 silly cache add args [ 'socket.oi', null ]
-11 verbose cache add spec socket.oi
-12 silly cache add parsed spec Result {
-12 silly cache add   raw: 'socket.oi',
-12 silly cache add   scope: null,
-12 silly cache add   name: 'socket.oi',
-12 silly cache add   rawSpec: '',
-12 silly cache add   spec: 'latest',
-12 silly cache add   type: 'tag' }
-13 silly addNamed socket.oi@latest
-14 verbose addNamed "latest" is being treated as a dist-tag for socket.oi
-15 info addNameTag [ 'socket.oi', 'latest' ]
-16 silly mapToRegistry name socket.oi
-17 silly mapToRegistry using default registry
-18 silly mapToRegistry registry https://registry.npmjs.org/
-19 silly mapToRegistry uri https://registry.npmjs.org/socket.oi
-20 verbose addNameTag registry:https://registry.npmjs.org/socket.oi not in flight; fetching
-21 verbose request uri https://registry.npmjs.org/socket.oi
-22 verbose request no auth needed
-23 info attempt registry request try #1 at 14:14:16
-24 verbose request id 1fabff873ba62a3f
-25 http request GET https://registry.npmjs.org/socket.oi
-26 http 404 https://registry.npmjs.org/socket.oi
-27 verbose headers { 'content-type': 'application/json',
-27 verbose headers   'cache-control': 'max-age=0',
-27 verbose headers   'content-length': '2',
-27 verbose headers   'accept-ranges': 'bytes',
-27 verbose headers   date: 'Wed, 08 Jun 2016 19:14:18 GMT',
-27 verbose headers   via: '1.1 varnish',
-27 verbose headers   age: '0',
-27 verbose headers   connection: 'keep-alive',
-27 verbose headers   'x-served-by': 'cache-jfk1036-JFK',
-27 verbose headers   'x-cache': 'MISS',
-27 verbose headers   'x-cache-hits': '0',
-27 verbose headers   'x-timer': 'S1465413258.729836,VS0,VE21',
-27 verbose headers   vary: 'Accept-Encoding' }
-28 silly get cb [ 404,
-28 silly get   { 'content-type': 'application/json',
-28 silly get     'cache-control': 'max-age=0',
-28 silly get     'content-length': '2',
-28 silly get     'accept-ranges': 'bytes',
-28 silly get     date: 'Wed, 08 Jun 2016 19:14:18 GMT',
-28 silly get     via: '1.1 varnish',
-28 silly get     age: '0',
-28 silly get     connection: 'keep-alive',
-28 silly get     'x-served-by': 'cache-jfk1036-JFK',
-28 silly get     'x-cache': 'MISS',
-28 silly get     'x-cache-hits': '0',
-28 silly get     'x-timer': 'S1465413258.729836,VS0,VE21',
-28 silly get     vary: 'Accept-Encoding' } ]
-29 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
-29 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
-29 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
-29 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
-29 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
-29 verbose stack     at emitTwo (events.js:87:13)
-29 verbose stack     at Request.emit (events.js:172:7)
-29 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
-29 verbose stack     at emitOne (events.js:82:20)
-29 verbose stack     at Request.emit (events.js:169:7)
-29 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
-30 verbose statusCode 404
-31 verbose pkgid socket.oi
-32 verbose cwd C:\Users\SARITA\Desktop\whassapt
-33 error Windows_NT 6.3.9600
-34 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "socket.oi"
-35 error node v4.4.0
-36 error npm  v2.14.20
-37 error code E404
-38 error 404 Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
-38 error 404
-38 error 404 'socket.oi' is not in the npm registry.
-38 error 404 You should bug the author to publish it (or use the name yourself!)
-38 error 404 It was specified as a dependency of 'Parametros-en-las-url-nodejs'
-38 error 404
-38 error 404 Note that you can also install from a
-38 error 404 tarball, folder, http url, or git url.
-39 verbose exit [ 1, true ]
+9 verbose installManyTop reading scoped package data from C:\Users\SARITA\Desktop\whassapt\node_modules\express\package.json
+10 verbose readDependencies loading dependencies from C:\Users\SARITA\Desktop\whassapt\package.json
+11 silly cache add args [ 'socket.oi', null ]
+12 verbose cache add spec socket.oi
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'socket.oi',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'socket.oi',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: 'latest',
+13 silly cache add   type: 'tag' }
+14 silly addNamed socket.oi@latest
+15 verbose addNamed "latest" is being treated as a dist-tag for socket.oi
+16 info addNameTag [ 'socket.oi', 'latest' ]
+17 silly mapToRegistry name socket.oi
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/socket.oi
+21 verbose addNameTag registry:https://registry.npmjs.org/socket.oi not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/socket.oi
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 14:44:11
+25 verbose request id 2daea6ec607aa7b1
+26 http request GET https://registry.npmjs.org/socket.oi
+27 http 404 https://registry.npmjs.org/socket.oi
+28 verbose headers { 'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '2',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Wed, 08 Jun 2016 19:44:12 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-jfk1021-JFK',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1465415052.759086,VS0,VE100',
+28 verbose headers   vary: 'Accept-Encoding' }
+29 silly get cb [ 404,
+29 silly get   { 'content-type': 'application/json',
+29 silly get     'cache-control': 'max-age=0',
+29 silly get     'content-length': '2',
+29 silly get     'accept-ranges': 'bytes',
+29 silly get     date: 'Wed, 08 Jun 2016 19:44:12 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     age: '0',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-jfk1021-JFK',
+29 silly get     'x-cache': 'MISS',
+29 silly get     'x-cache-hits': '0',
+29 silly get     'x-timer': 'S1465415052.759086,VS0,VE100',
+29 silly get     vary: 'Accept-Encoding' } ]
+30 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
+30 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+30 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+30 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+30 verbose stack     at emitTwo (events.js:87:13)
+30 verbose stack     at Request.emit (events.js:172:7)
+30 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+30 verbose stack     at emitOne (events.js:82:20)
+30 verbose stack     at Request.emit (events.js:169:7)
+30 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+31 verbose statusCode 404
+32 verbose pkgid socket.oi
+33 verbose cwd C:\Users\SARITA\Desktop\whassapt
+34 error Windows_NT 6.3.9600
+35 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "socket.oi"
+36 error node v4.4.0
+37 error npm  v2.14.20
+38 error code E404
+39 error 404 Registry returned 404 for GET on https://registry.npmjs.org/socket.oi
+39 error 404
+39 error 404 'socket.oi' is not in the npm registry.
+39 error 404 You should bug the author to publish it (or use the name yourself!)
+39 error 404 It was specified as a dependency of 'Parametros-en-las-url-nodejs'
+39 error 404
+39 error 404 Note that you can also install from a
+39 error 404 tarball, folder, http url, or git url.
+40 verbose exit [ 1, true ]

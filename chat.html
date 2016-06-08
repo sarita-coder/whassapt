@@ -452,23 +452,62 @@
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
   <script type="text/javascript" src="js/contacto.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+  <script src="/socket.io.js"></script>
   <script>
-      var webSocket = io.connect("http://127.0.0.1:3000"); 
-      // Inicializamos socketIO en el cliente
-      $('#escribe').keyup(function inicio (evt) {
-        if (evt.keyCode === 13) {
-          enviar_datos();
-          webSocket.on("datos_servidor",recibir_datos);
-        }
-      });
-      function enviar_datos () {
-         var dato=$("#escribe").val();
-         webSocket.emit("datos_cliente",dato);
+  	 var socket = io(); // Inicializamos socketIO en el cliente
+    
+    /**
+     * Listener para el evento 'chat message'
+     *   Notese que es el mismo evento que se envia 
+     *   desde el servidor.
+     * Agregamos el mensage entrante a la lista.
+     */
+    socket.on('chat message', function (msg) {
+$('#pane-chat-msgs').append('<div class="total-i"><div class="msg-i"><div class="message-i"><div class="bubble-i"><div class="message-text-i t-right"><span>'+msg+'</span></div><div class"time-chat t-right"><span class="time-i text-right">'+hora_actual+'</span></div></div></div></div></div></div>')
+    });
+    
+    /**
+     * Emitimos un evento de tipo 'chat message' cada vez
+     * que se presiona 'Enter' en el textarea y enviamos
+     * su contenido como mensaje.
+     */
+    $('#escribe').keyup(function (evt) {
+      if (evt.keyCode === 13) {
+        socket.emit('chat message', $('#escribe').val());
+        $('#escribe').val('');
       }
-      function recibir_datos (data) {
-         $('#pane-chat-msgs').append('<div class="total-i"><div class="msg-i"><div class="message-i"><div class="bubble-i"><div class="message-text-i t-right"><span>'+dato+'</span></div><div class"time-chat t-right"><span class="time-i text-right">'+hora_actual+'</span></div></div></div></div></div></div>')
-      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	      // var webSocket = io.connect("http://127.0.0.1:3000"); 
+	      // // Inicializamos socketIO en el cliente
+	      // $('#escribe').keyup(function inicio (evt) {
+	      //   if (evt.keyCode === 13) {
+	      //     enviar_datos();
+	      //     webSocket.on("datos_servidor",recibir_datos);
+	      //   }
+	      // });
+	      // function enviar_datos () {
+	      //    var dato=$("#escribe").val();
+	      //    webSocket.emit("datos_cliente",dato);
+	      // }
+	      // function recibir_datos (data) {
+	      //    $('#pane-chat-msgs').append('<div class="total-i"><div class="msg-i"><div class="message-i"><div class="bubble-i"><div class="message-text-i t-right"><span>'+dato+'</span></div><div class"time-chat t-right"><span class="time-i text-right">'+hora_actual+'</span></div></div></div></div></div></div>')
+	      // }
 
     </script>
   </body>
