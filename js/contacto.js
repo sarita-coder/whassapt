@@ -35,12 +35,12 @@ var contact=[{
 				chat:[],
 			},{
 				id:"7",
-				name:"Katy",
+				name:"Katy Sanchez",
 				img:"katy.jpg",
 				chat:[],
 			},{
 				id:"8",
-				name:"aldo",
+				name:"Aldo Alfaro",
 				img:"aldo.jpg",
 				chat:[],
 			}];
